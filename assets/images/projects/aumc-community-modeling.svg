@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <title>PN-03 AUMC-COMMUNITY-MODELING schematic</title>
+  <desc>Schematic: 148 commercial buildings feed a per-building 3R2C thermal model, which is calibrated against measured data into a calibrated model set.</desc>
+  <defs>
+    <style>
+      text { font-family: "IBM Plex Mono, SFMono-Regular, Consolas, monospace"; font-size: 10px; letter-spacing: 0.06em; fill: #EAF3FB; text-transform: uppercase; }
+      .sec { font-size: 9px; fill-opacity: 0.7; }
+      .key { fill: #9FDBFF; font-size: 11px; font-weight: bold; }
+      .box { fill: none; stroke: #EAF3FB; stroke-opacity: 0.6; stroke-width: 1; }
+      .acc { fill: none; stroke: #9FDBFF; stroke-width: 1; }
+      .ln { stroke: #EAF3FB; stroke-opacity: 0.7; stroke-width: 1; fill: none; }
+      .lnk { stroke: #9FDBFF; stroke-width: 1; fill: none; }
+    </style>
+    <pattern id="minor" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0 H0 V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="major" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0 H0 V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+    <marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#EAF3FB" fill-opacity="0.7"/>
+    </marker>
+    <marker id="ak" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#9FDBFF"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="360" fill="#0D3B66"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#minor)"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#major)"/>
+
+  <rect class="box" x="16" y="16" width="608" height="28"/>
+  <text x="28" y="34">PN-03 · AUMC-COMMUNITY-MODELING · 3R2C CALIBRATED MODEL SET</text>
+
+  <rect class="box" x="32" y="150" width="120" height="80"/>
+  <text x="92" y="176" text-anchor="middle">COMMERCIAL</text>
+  <text x="92" y="190" text-anchor="middle">BUILDINGS</text>
+  <text class="sec" x="92" y="214" text-anchor="middle">BUILDING DATA</text>
+
+  <rect class="acc" x="200" y="150" width="130" height="80"/>
+  <text x="265" y="176" text-anchor="middle">3R2C THERMAL</text>
+  <text x="265" y="190" text-anchor="middle">MODEL</text>
+  <text class="sec" x="265" y="214" text-anchor="middle">PER BUILDING</text>
+
+  <rect class="box" x="378" y="150" width="110" height="80"/>
+  <text x="433" y="180" text-anchor="middle">CALIBRATION</text>
+  <text class="sec" x="433" y="214" text-anchor="middle">MEASURED DATA</text>
+
+  <rect class="box" x="516" y="150" width="92" height="80"/>
+  <text x="562" y="176" text-anchor="middle">CALIBRATED</text>
+  <text x="562" y="190" text-anchor="middle">MODEL SET</text>
+  <text class="sec" x="562" y="214" text-anchor="middle">OUTPUT</text>
+
+  <line class="lnk" x1="152" y1="190" x2="198" y2="190" marker-end="url(#ak)"/>
+  <line class="ln" x1="330" y1="190" x2="376" y2="190" marker-end="url(#ah)"/>
+  <line class="ln" x1="488" y1="190" x2="514" y2="190" marker-end="url(#ah)"/>
+  <path class="ln" d="M433 150 V128 H265 V148" stroke-dasharray="3 3" marker-end="url(#ah)"/>
+  <text class="sec" x="349" y="122" text-anchor="middle">PARAMETER FEEDBACK</text>
+
+  <line class="ln" x1="92" y1="230" x2="92" y2="266" stroke-dasharray="2 2"/>
+  <line class="ln" x1="265" y1="230" x2="265" y2="266" stroke-dasharray="2 2"/>
+
+  <rect class="acc" x="32" y="268" width="120" height="44"/>
+  <text class="key" x="92" y="290" text-anchor="middle">148</text>
+  <text class="sec" x="92" y="304" text-anchor="middle">BUILDINGS</text>
+
+  <rect class="box" x="200" y="268" width="130" height="44"/>
+  <text class="key" x="265" y="290" text-anchor="middle">3R2C</text>
+  <text class="sec" x="265" y="304" text-anchor="middle">RC NETWORK</text>
+
+  <text class="sec" x="32" y="334">FIG. 1 · SYSTEM SCHEMATIC · NOT TO SCALE</text>
+</svg>

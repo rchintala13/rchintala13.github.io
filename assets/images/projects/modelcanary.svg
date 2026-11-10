@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+<title>PN-04 modelcanary: progressive delivery architecture</title>
+<desc>Client traffic enters a FastAPI gateway with a stage router that sends rows to production or candidate ONNX models. A rollout controller with three sequential monitors decides promote or rollback, logged to a hash-chained audit log. A ground-truth simulator feeds the controller.</desc>
+<defs>
+<style>.t{font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;font-size:9px;letter-spacing:0.06em;fill:#EAF3FB}.s{opacity:.7}.a{fill:#9FDBFF}.h{font-size:10px}</style>
+<pattern id="mn" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/></pattern>
+<pattern id="mj" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<marker id="ar" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6z" fill="#EAF3FB"/></marker>
+<marker id="ac" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6z" fill="#9FDBFF"/></marker>
+</defs>
+<rect x="0" y="0" width="640" height="360" fill="#0D3B66"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#mn)"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#mj)"/>
+
+<rect x="16" y="16" width="608" height="26" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6" stroke-width="1"/>
+<text x="28" y="33" class="t h">PN-04 · MODELCANARY · PROGRESSIVE DELIVERY WITH SEQUENTIAL TESTS</text>
+
+<!-- client -->
+<rect x="28" y="84" width="84" height="40" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="70" y="108" text-anchor="middle" class="t">CLIENT</text>
+
+<!-- gateway container -->
+<rect x="130" y="60" width="170" height="160" fill="none" stroke="#EAF3FB" stroke-opacity="0.5" stroke-dasharray="4 3" stroke-width="1"/>
+<text x="138" y="74" class="t s">FASTAPI GATEWAY</text>
+<rect x="142" y="84" width="146" height="28" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="215" y="102" text-anchor="middle" class="t">GATEWAY</text>
+<rect x="142" y="126" width="146" height="28" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="215" y="144" text-anchor="middle" class="t">STAGE ROUTER</text>
+<rect x="142" y="166" width="70" height="20" fill="#0D3B66" stroke="#9FDBFF" stroke-width="1"/>
+<text x="177" y="180" text-anchor="middle" class="t a">CANARY 10%</text>
+<rect x="218" y="166" width="70" height="20" fill="#0D3B66" stroke="#9FDBFF" stroke-width="1"/>
+<text x="253" y="180" text-anchor="middle" class="t a">CANARY 50%</text>
+<rect x="142" y="196" width="146" height="20" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="215" y="210" text-anchor="middle" class="t">FEEDBACK STORE</text>
+
+<!-- onnx container -->
+<rect x="330" y="60" width="130" height="160" fill="none" stroke="#EAF3FB" stroke-opacity="0.5" stroke-dasharray="4 3" stroke-width="1"/>
+<text x="338" y="74" class="t s">ONNX RUNTIME</text>
+<rect x="340" y="84" width="110" height="28" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="395" y="102" text-anchor="middle" class="t">PRODUCTION</text>
+<rect x="340" y="126" width="110" height="28" fill="#0D3B66" stroke="#9FDBFF" stroke-width="1"/>
+<text x="395" y="144" text-anchor="middle" class="t a">CANDIDATE</text>
+<text x="340" y="176" class="t s">CPU SESSIONS</text>
+
+<!-- controller container -->
+<rect x="484" y="60" width="140" height="160" fill="none" stroke="#EAF3FB" stroke-opacity="0.5" stroke-dasharray="4 3" stroke-width="1"/>
+<text x="492" y="74" class="t s">ROLLOUT CONTROLLER</text>
+<rect x="492" y="84" width="124" height="24" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="554" y="100" text-anchor="middle" class="t">ERROR · SPRT</text>
+<rect x="492" y="116" width="124" height="24" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="554" y="132" text-anchor="middle" class="t">LATENCY · CS</text>
+<rect x="492" y="148" width="124" height="24" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="554" y="164" text-anchor="middle" class="t">BUSINESS · CS</text>
+<rect x="492" y="180" width="124" height="24" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="554" y="196" text-anchor="middle" class="t">PROMOTE / ROLLBACK</text>
+
+<!-- bottom row -->
+<rect x="28" y="270" width="128" height="40" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="92" y="287" text-anchor="middle" class="t">GROUND-TRUTH</text>
+<text x="92" y="301" text-anchor="middle" class="t">SIMULATOR</text>
+<rect x="200" y="270" width="110" height="40" fill="#0D3B66" stroke="#9FDBFF" stroke-width="1"/>
+<text x="224" y="296" class="t a" style="font-size:20px">3</text>
+<text x="246" y="296" class="t">MONITORS</text>
+<rect x="484" y="270" width="140" height="40" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1"/>
+<text x="554" y="287" text-anchor="middle" class="t">HASH-CHAINED</text>
+<text x="554" y="301" text-anchor="middle" class="t">AUDIT LOG</text>
+
+<!-- arrows -->
+<line x1="112" y1="104" x2="142" y2="104" stroke="#EAF3FB" stroke-opacity="0.8" stroke-width="1" marker-end="url(#ar)"/>
+<line x1="215" y1="112" x2="215" y2="126" stroke="#EAF3FB" stroke-opacity="0.8" stroke-width="1" marker-end="url(#ar)"/>
+<line x1="300" y1="98" x2="340" y2="98" stroke="#EAF3FB" stroke-opacity="0.8" stroke-width="1" marker-end="url(#ar)"/>
+<line x1="288" y1="140" x2="340" y2="140" stroke="#9FDBFF" stroke-width="1.5" marker-end="url(#ac)"/>
+<polyline points="92,270 92,236 550,236 550,222" fill="none" stroke="#9FDBFF" stroke-width="1.5" marker-end="url(#ac)"/>
+<line x1="215" y1="220" x2="215" y2="236" stroke="#EAF3FB" stroke-opacity="0.6" stroke-width="1"/>
+<text x="228" y="232" class="t s">PAIRS · PER-ARM OBS</text>
+<line x1="600" y1="204" x2="600" y2="270" stroke="#EAF3FB" stroke-opacity="0.8" stroke-width="1" marker-end="url(#ar)"/>
+</svg>

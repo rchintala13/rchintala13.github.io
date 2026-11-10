@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+<title>PN-08 PropertyIQ real estate system schematic</title>
+<desc>Blueprint schematic: React frontend calls REST API on Node.js/Express, which calls the Python ML service and Redis. Data ingest pulls external APIs into PostgreSQL/PostGIS, which feeds the ML service. Three readouts: 12M horizon, MAPE under 8%, 0-100 score.</desc>
+<defs>
+<pattern id="m" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05"/></pattern>
+<pattern id="M" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09"/></pattern>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#EAF3FB" fill-opacity="0.8"/></marker>
+<marker id="k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9FDBFF"/></marker>
+<style>
+svg{font-family:"IBM Plex Mono, SFMono-Regular, Consolas, monospace"}
+.t{font-size:10px;letter-spacing:0.06em;fill:#EAF3FB}
+.s{font-size:9px;letter-spacing:0.06em;fill:#EAF3FB;fill-opacity:0.7}
+.b{fill:#0D3B66;stroke:#EAF3FB;stroke-opacity:0.7;stroke-width:1}
+.w{fill:none;stroke:#EAF3FB;stroke-opacity:0.5;stroke-width:1}
+.ln{fill:none;stroke:#EAF3FB;stroke-opacity:0.6;stroke-width:1}
+.ac{fill:none;stroke:#9FDBFF;stroke-width:1}
+.n{font-size:13px;letter-spacing:0.06em;fill:#9FDBFF}
+.c{text-anchor:middle}
+</style>
+</defs>
+
+<rect width="640" height="360" fill="#0D3B66"/>
+<rect width="640" height="360" fill="url(#m)"/>
+<rect width="640" height="360" fill="url(#M)"/>
+
+<rect x="16" y="16" width="608" height="24" class="w"/>
+<text x="26" y="32" class="t">PN-08 · PROPERTYIQ-REAL-ESTATE · ML PRICE FORECAST SYSTEM</text>
+
+<rect x="16" y="88" width="136" height="44" class="b"/>
+<text x="84" y="106" class="t c">REACT + TS</text>
+<text x="84" y="120" class="s c">FRONTEND</text>
+
+<rect x="200" y="88" width="150" height="44" class="b"/>
+<text x="275" y="106" class="t c">NODE.JS / EXPRESS</text>
+<text x="275" y="120" class="s c">REST API SERVER</text>
+
+<rect x="420" y="168" width="204" height="56" class="b"/>
+<text x="522" y="190" class="t c">PYTHON ML SERVICE</text>
+<text x="522" y="206" class="s c">XGB · LGBM · PROPHET · NN</text>
+
+<rect x="200" y="168" width="150" height="44" class="b"/>
+<text x="275" y="186" class="t c">REDIS CACHE</text>
+<text x="275" y="200" class="s c">HOT PREDICTIONS</text>
+
+<rect x="200" y="250" width="150" height="50" class="b"/>
+<text x="275" y="272" class="t c">POSTGRESQL</text>
+<text x="275" y="288" class="s c">+ POSTGIS</text>
+
+<rect x="16" y="250" width="136" height="50" class="b"/>
+<text x="84" y="272" class="t c">DATA INGEST</text>
+<text x="84" y="288" class="s c">BATCH JOBS</text>
+
+<rect x="16" y="168" width="136" height="44" class="b"/>
+<text x="84" y="186" class="t c">EXTERNAL APIs</text>
+<text x="84" y="200" class="s c">GREATSCHOOLS · MLS</text>
+
+<line x1="152" y1="110" x2="198" y2="110" class="ln" marker-end="url(#a)"/>
+<text x="176" y="104" class="s c">REST</text>
+<line x1="275" y1="132" x2="275" y2="166" class="ln" marker-end="url(#a)"/>
+<line x1="84" y1="212" x2="84" y2="248" class="ln" marker-end="url(#a)"/>
+<line x1="152" y1="275" x2="198" y2="275" class="ln" marker-end="url(#a)"/>
+
+<polyline points="350,110 440,110 440,166" class="ac" marker-end="url(#k)"/>
+<polyline points="350,275 400,275 400,196 418,196" class="ac" marker-end="url(#k)"/>
+
+<rect x="420" y="252" width="56" height="44" class="b"/>
+<text x="448" y="270" class="n c">12M</text>
+<text x="448" y="286" class="s c">HORIZON</text>
+
+<rect x="484" y="252" width="56" height="44" class="b"/>
+<text x="512" y="270" class="n c">&lt;8%</text>
+<text x="512" y="286" class="s c">MAPE</text>
+
+<rect x="548" y="252" width="56" height="44" class="b"/>
+<text x="576" y="270" class="n c">0–100</text>
+<text x="576" y="286" class="s c">SCORE</text>
+
+<text x="16" y="340" class="s">FIG. 1 · SYSTEM SCHEMATIC · ARROWS = REQUEST / DATA FLOW</text>
+</svg>

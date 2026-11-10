@@ -1,0 +1,243 @@
+{
+  "projects": [
+    {
+      "name": "ML-building-models",
+      "category": "Surrogate modeling",
+      "description": "A schema-driven ML pipeline that builds surrogate models from EnergyPlus simulation data to estimate building energy consumption from easily available building properties. It spans building types, HVAC systems and climate zones.",
+      "highlights": [
+        "Scan, catalog and train CLI turns raw EnergyPlus CSVs into fitted models per use case.",
+        "Savings are computed as baseline minus proposed model predictions for the same buildings.",
+        "The résumé reports 1.1–3.3% average CVRMSE for the related DOE 179D surrogates across 16 climate zones."
+      ],
+      "technologies": [
+        "Python",
+        "EnergyPlus",
+        "Ridge regression",
+        "YAML configs",
+        "Parquet",
+        "joblib"
+      ],
+      "links": {
+        "source": "https://github.com/rchintala13/ML-building-models"
+      },
+      "image": "assets/images/projects/ml-building-models.svg",
+      "featured": true,
+      "hero": {
+        "src": "assets/images/projects/ml-building-models-hero.jpg",
+        "alt": "ML-building-models — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "building-rom-automation",
+      "category": "System identification",
+      "description": "Automates reduced-order building envelope models with an RC structure, trained and tested on EnergyPlus simulation data. A config-driven pipeline edits IDFs, runs simulations, processes outputs and runs EKF-based 4R2C identification.",
+      "highlights": [
+        "Full pipeline from raw ResStock IDFs to processed EKF training data, with config consistency checks.",
+        "Two-pass augmented-state EKF freezes parameters for held-out validation and test evaluation.",
+        "Candidates in the parameter grid are scored by RMSE on the validation segment."
+      ],
+      "technologies": [
+        "Python",
+        "EnergyPlus",
+        "Extended Kalman Filter",
+        "ResStock",
+        "RC modeling",
+        "YAML configs"
+      ],
+      "links": {
+        "source": "https://github.com/rchintala13/building-rom-automation"
+      },
+      "image": "assets/images/projects/building-rom-automation.svg",
+      "featured": true,
+      "hero": {
+        "src": "assets/images/projects/building-rom-automation-hero.jpg",
+        "alt": "building-rom-automation — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "AUMC-community-modeling",
+      "category": "Building modeling",
+      "description": "Develops 3R2C thermal models for a community of 148 commercial buildings.",
+      "highlights": [
+        "Covers a community of 148 commercial buildings."
+      ],
+      "technologies": [
+        "Python",
+        "3R2C models"
+      ],
+      "links": {
+        "source": "https://github.com/rchintala13/AUMC-community-modeling"
+      },
+      "image": "assets/images/projects/aumc-community-modeling.svg",
+      "hero": {
+        "src": "assets/images/projects/aumc-community-modeling-hero.jpg",
+        "alt": "AUMC-community-modeling — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "modelcanary",
+      "category": "MLOps",
+      "description": "Progressive delivery for ML models: a FastAPI gateway serves ONNX models in shadow and then canary stages. Sequential tests decide automatic promotion or rollback, and every decision goes to a tamper-evident audit trail.",
+      "highlights": [
+        "Error rate, latency and a business metric are monitored with Wald SPRT and always-valid confidence sequences.",
+        "SHA-256 hash-chained audit log detects edits, deletions and reordering.",
+        "Evaluated against a ground-truth simulator over thousands of held-out seeds."
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "ONNX Runtime",
+        "scikit-learn",
+        "Prometheus",
+        "Sequential testing"
+      ],
+      "links": {
+        "source": "https://github.com/rchintala13/modelcanary"
+      },
+      "image": "assets/images/projects/modelcanary.svg",
+      "hero": {
+        "src": "assets/images/projects/modelcanary-hero.jpg",
+        "alt": "modelcanary — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "labelbudget",
+      "category": "ML evaluation",
+      "description": "An active-learning benchmark that reports labels needed to reach a target accuracy, with variance across many seeds, next to a prominent random-sampling baseline. A comparison guard refuses claims the evidence does not support.",
+      "highlights": [
+        "Target accuracy is 97% of the full-pool score; the random baseline is always run.",
+        "Paired bootstrap CI and exact sign test, with no comparative claim below 10 seeds.",
+        "Pure Python standard library with 25 tests."
+      ],
+      "technologies": [
+        "Python",
+        "Active learning",
+        "Logistic regression",
+        "Bootstrap statistics",
+        "Power analysis"
+      ],
+      "links": {
+        "source": "https://github.com/rchintala13/labelbudget"
+      },
+      "image": "assets/images/projects/labelbudget.svg",
+      "hero": {
+        "src": "assets/images/projects/labelbudget-hero.jpg",
+        "alt": "labelbudget — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "sliceguard",
+      "category": "Fairness auditing",
+      "description": "A fairness slice auditor that uses Wilson intervals, Benjamini-Hochberg correction and minimum detectable effect, so tiny slices stop producing false alarms.",
+      "highlights": [
+        "Slices are ranked by the lower bound of the gap interval, not the raw point estimate.",
+        "Slices too small to rule out a material gap are marked INDETERMINATE rather than fair.",
+        "Demo audits 6,000 synthetic evaluations with two planted 9-point disparities."
+      ],
+      "technologies": [
+        "Python",
+        "Wilson intervals",
+        "Newcombe interval",
+        "Benjamini-Hochberg",
+        "Statistical testing"
+      ],
+      "links": {
+        "source": "https://github.com/rchintala13/sliceguard"
+      },
+      "image": "assets/images/projects/sliceguard.svg",
+      "hero": {
+        "src": "assets/images/projects/sliceguard-hero.jpg",
+        "alt": "sliceguard — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "greenpulse-energy-monitoring",
+      "category": "Energy analytics",
+      "description": "An AI-powered energy monitoring and optimization platform for commercial buildings. It combines real-time consumption dashboards, ML anomaly detection, LSTM demand forecasting and carbon tracking.",
+      "highlights": [
+        "LSTM models forecast energy usage up to 7 days ahead, with hourly load forecasts and confidence intervals.",
+        "Anomaly detection flags equipment malfunctions, after-hours consumption and demand spikes.",
+        "Cost analysis covers time-of-use rate and demand-charge optimization."
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Python",
+        "TimescaleDB",
+        "Redis"
+      ],
+      "links": {
+        "source": "https://github.com/rchintala13/greenpulse-energy-monitoring",
+        "demo": "https://greenpulse-demo.vercel.app"
+      },
+      "image": "assets/images/projects/greenpulse-energy-monitoring.svg",
+      "hero": {
+        "src": "assets/images/projects/greenpulse-energy-monitoring-hero.jpg",
+        "alt": "greenpulse-energy-monitoring — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "propertyiq-real-estate",
+      "category": "Predictive modeling",
+      "description": "An ML-powered real estate investment platform that predicts property values 12 months ahead and scores investment opportunities, with market heatmaps, neighborhood analytics and a cash flow calculator.",
+      "highlights": [
+        "12-month price prediction with MAPE under 8%.",
+        "Every property gets a 0-100 investment score based on ROI potential.",
+        "Models include XGBoost, LightGBM, Prophet and a neural network for image analysis."
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Python",
+        "XGBoost",
+        "LightGBM",
+        "Prophet"
+      ],
+      "links": {
+        "source": "https://github.com/rchintala13/propertyiq-real-estate",
+        "demo": "https://propertyiq-demo.vercel.app"
+      },
+      "image": "assets/images/projects/propertyiq-real-estate.svg",
+      "hero": {
+        "src": "assets/images/projects/propertyiq-real-estate-hero.jpg",
+        "alt": "propertyiq-real-estate — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "weather-data-pipeline-great-expectations",
+      "category": "Data quality",
+      "description": "A weather data pipeline that collects hourly observations from 50+ global cities via the Open-Meteo API, validates every batch with Great Expectations, and transforms data through dbt into analytics-ready BigQuery tables.",
+      "highlights": [
+        "Quality gates check schema, null rates under 5%, value ranges, row counts and freshness under 3 hours.",
+        "Failed checks halt the pipeline and send Slack alerts.",
+        "21 unit tests pass across 5 test suites."
+      ],
+      "technologies": [
+        "Python",
+        "Great Expectations",
+        "dbt",
+        "BigQuery",
+        "Prefect",
+        "Google Cloud Storage"
+      ],
+      "links": {
+        "source": "https://github.com/rchintala13/weather-data-pipeline-great-expectations"
+      },
+      "image": "assets/images/projects/weather-data-pipeline-great-expectations.svg",
+      "hero": {
+        "src": "assets/images/projects/weather-data-pipeline-great-expectations-hero.jpg",
+        "alt": "weather-data-pipeline-great-expectations — Concept render",
+        "caption": "Concept render"
+      }
+    }
+  ]
+}

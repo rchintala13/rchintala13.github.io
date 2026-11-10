@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+<title>PN-07 GreenPulse energy monitoring architecture</title>
+<desc>Schematic: React+TS frontend to Node/Express API (REST/WS), Python ML service (LSTM forecast, anomaly alerts) and MQTT ingest, feeding Redis, TimescaleDB and InfluxDB.</desc>
+<defs>
+<style>.t{font-family:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;font-size:10px;letter-spacing:.06em;fill:#EAF3FB}.s{font-size:9px;fill-opacity:.7}.n{font-size:16px;fill:#9FDBFF}</style>
+<pattern id="minor" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity=".05"/></pattern>
+<pattern id="major" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity=".09"/></pattern>
+<marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#EAF3FB" fill-opacity=".8"/></marker>
+<marker id="ahA" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#9FDBFF"/></marker>
+</defs>
+
+<rect x="0" y="0" width="640" height="360" fill="#0D3B66"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#minor)"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#major)"/>
+
+<rect x="0" y="0" width="640" height="28" fill="#EAF3FB" fill-opacity=".05"/>
+<line x1="0" y1="28" x2="640" y2="28" stroke="#EAF3FB" stroke-opacity=".4"/>
+<text x="16" y="18" class="t">PN-07 · GREENPULSE-ENERGY-MONITORING · REACT · NODE.JS · PYTHON ML · MQTT</text>
+
+<g stroke="#EAF3FB" stroke-opacity=".6" stroke-width="1" fill="#0D3B66" fill-opacity=".85">
+<rect x="16" y="76" width="120" height="56"/>
+<rect x="180" y="60" width="200" height="230" stroke-dasharray="4 3" fill="none" stroke-opacity=".4"/>
+<rect x="196" y="84" width="168" height="40"/>
+<rect x="196" y="150" width="168" height="40"/>
+<rect x="196" y="216" width="168" height="40"/>
+<rect x="16" y="150" width="120" height="40"/>
+<rect x="440" y="72" width="184" height="40"/>
+<rect x="440" y="130" width="184" height="40"/>
+<rect x="440" y="188" width="184" height="40"/>
+<rect x="16" y="304" width="192" height="36"/>
+<rect x="224" y="304" width="192" height="36"/>
+<rect x="432" y="304" width="192" height="36"/>
+</g>
+
+<text x="188" y="72" class="t s">BACKEND</text>
+<text x="76" y="101" class="t" text-anchor="middle">FRONTEND</text>
+<text x="76" y="117" class="t s" text-anchor="middle">REACT + TS</text>
+<text x="280" y="103" class="t" text-anchor="middle">NODE.JS / EXPRESS API</text>
+<text x="280" y="116" class="t s" text-anchor="middle">REST + WEBSOCKET</text>
+<text x="280" y="169" class="t" text-anchor="middle">PYTHON ML SERVICE</text>
+<text x="280" y="182" class="t s" text-anchor="middle">LSTM · ANOMALY DETECTION</text>
+<text x="280" y="235" class="t" text-anchor="middle">MQTT DATA INGEST</text>
+<text x="280" y="248" class="t s" text-anchor="middle">METERS → BROKER</text>
+<text x="76" y="169" class="t" text-anchor="middle">ALERTS</text>
+<text x="76" y="182" class="t s" text-anchor="middle">NOTIFY USER</text>
+<text x="532" y="91" class="t" text-anchor="middle">REDIS CACHE</text>
+<text x="532" y="104" class="t s" text-anchor="middle">LIVE STATE</text>
+<text x="532" y="149" class="t" text-anchor="middle">TIMESCALEDB</text>
+<text x="532" y="162" class="t s" text-anchor="middle">RAW READINGS</text>
+<text x="532" y="207" class="t" text-anchor="middle">INFLUXDB</text>
+<text x="532" y="220" class="t s" text-anchor="middle">METRIC SERIES</text>
+
+<g stroke="#EAF3FB" stroke-opacity=".8" stroke-width="1" fill="none">
+<path d="M136 104H196" stroke="#9FDBFF" stroke-width="1.5" marker-end="url(#ahA)"/>
+<path d="M270 124V150" marker-end="url(#ah)"/>
+<path d="M290 150V124" marker-end="url(#ah)"/>
+<path d="M196 170H136" marker-end="url(#ah)"/>
+<path d="M364 104H402V92H440" marker-end="url(#ah)"/>
+<path d="M364 170H400V150H440" marker-end="url(#ah)"/>
+<path d="M364 236H402V208H440" marker-end="url(#ah)"/>
+</g>
+<text x="140" y="94" class="t s">REST/WS</text>
+
+<text x="28" y="327" class="t n">7D</text>
+<text x="64" y="327" class="t s">FORECAST HORIZON</text>
+<text x="236" y="327" class="t n">3</text>
+<text x="256" y="327" class="t s">DATA STORES</text>
+<text x="444" y="327" class="t n">3</text>
+<text x="464" y="327" class="t s">BACKEND SERVICES</text>
+</svg>

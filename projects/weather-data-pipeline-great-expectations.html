@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>weather-data-pipeline-great-expectations | Rohit Hari Chintala, Ph.D.</title>
+<meta name="description" content="A weather data pipeline that collects hourly observations from 50+ global cities via the Open-Meteo API, validates every batch with Great Expectations, and transforms data through dbt into analytics-ready BigQuery tables.">
+<link rel="canonical" href="https://rchintala13.github.io/projects/weather-data-pipeline-great-expectations.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="weather-data-pipeline-great-expectations | Rohit Hari Chintala, Ph.D.">
+<meta property="og:description" content="A weather data pipeline with Great Expectations quality gates, dbt transformations and BigQuery tables.">
+<meta property="og:url" content="https://rchintala13.github.io/projects/weather-data-pipeline-great-expectations.html">
+<meta property="og:image" content="https://rchintala13.github.io/assets/images/social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#15395B">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="mark" href="../#top" aria-label="Rohit Hari Chintala, Ph.D. (home page)">RHC</a>
+    <nav class="nav-desk" aria-label="Primary">
+      <a href="../#about">About</a>
+      <a href="../#experience">Experience</a>
+      <a href="../#projects">Projects</a>
+      <a href="../#skills">Skills</a>
+      <a href="../#contact">Contact</a>
+      <a class="nav-cv" href="../assets/files/rohit-ph-d-resume.pdf" download>Résumé</a>
+    </nav>
+    <details class="nav-mobile">
+      <summary>Menu</summary>
+      <nav aria-label="Mobile">
+        <a href="../#about">About</a>
+        <a href="../#experience">Experience</a>
+        <a href="../#projects">Projects</a>
+        <a href="../#skills">Skills</a>
+        <a href="../#contact">Contact</a>
+        <a href="../assets/files/rohit-ph-d-resume.pdf" download>Résumé (PDF)</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+<article class="detail">
+  <div class="wrap">
+    <p class="crumb"><a href="../#projects">← All projects</a></p>
+    <p class="kicker">Data quality</p>
+    <h1>weather-data-pipeline-great-expectations</h1>
+    <p class="lead">A weather data pipeline that collects hourly observations from 50+ global cities via the Open-Meteo API, validates every batch with Great Expectations, and transforms data through dbt into analytics-ready BigQuery tables.</p>
+
+    <figure class="d-hero">
+      <img src="../assets/images/projects/weather-data-pipeline-great-expectations-hero.jpg" alt="weather-data-pipeline-great-expectations — Concept render">
+      <figcaption>Concept render</figcaption>
+    </figure>
+
+    <div class="d-grid">
+      <div class="d-main">
+        <h2>Drawing</h2>
+        <figure class="d-drawing"><img src="../assets/images/projects/weather-data-pipeline-great-expectations.svg" alt="Diagram: data flows through four quality gates; a failed check halts the pipeline and sends an alert"></figure>
+        <h2>Highlights</h2>
+        <ul class="d-list">
+          <li>Quality gates check schema, null rates under 5%, value ranges, row counts and freshness under 3 hours.</li>
+          <li>Failed checks halt the pipeline and send Slack alerts.</li>
+          <li>21 unit tests pass across 5 test suites.</li>
+        </ul>
+      </div>
+      <aside class="d-side">
+        <h2>Technologies</h2>
+        <ul class="chips"><li>Python</li><li>Great Expectations</li><li>dbt</li><li>BigQuery</li><li>Prefect</li><li>Google Cloud Storage</li></ul>
+        <h2>Links</h2>
+        <ul class="links"><li><a href="https://github.com/rchintala13/weather-data-pipeline-great-expectations">Source code <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></li></ul>
+      </aside>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Rohit Hari Chintala, Ph.D. · Applied Scientist and AI/ML Engineer</p>
+    <p>Colorado · Sheet 1 of 1</p>
+  </div>
+</footer>
+</body>
+</html>

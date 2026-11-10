@@ -1,0 +1,51 @@
+{
+  "name": "Rohit Hari Chintala, Ph.D.",
+  "title": "Applied Scientist and AI/ML Engineer",
+  "summary": "I build production-grade machine learning, LLM agent and MLOps systems for energy and building applications. I was the technical lead for the ML surrogates behind the DOE 179D Web Calculator, a nationally deployed, IRS-supported platform. I turn complex simulation and operational data into reliable, explainable AI.",
+  "location": "Colorado",
+  "photo": {
+    "src": "assets/images/rohit-ph-d.jpg",
+    "alt": "Portrait of Rohit Hari Chintala, Ph.D."
+  },
+  "readouts": [
+    {
+      "value": "1.1–3.3%",
+      "label": "avg CVRMSE, DOE 179D surrogates"
+    },
+    {
+      "value": "16",
+      "label": "U.S. climate zones modeled"
+    },
+    {
+      "value": "20+",
+      "label": "peer-reviewed publications"
+    },
+    {
+      "value": "7+ yrs",
+      "label": "building production ML"
+    }
+  ],
+  "ctas": [
+    {
+      "label": "View projects",
+      "href": "#projects",
+      "kind": "primary"
+    },
+    {
+      "label": "Résumé",
+      "href": "assets/files/rohit-ph-d-resume.pdf",
+      "kind": "resume"
+    },
+    {
+      "label": "Get in touch",
+      "href": "#contact",
+      "kind": "secondary"
+    }
+  ],
+  "social": {
+    "github": "https://github.com/rchintala13",
+    "linkedin": "https://www.linkedin.com/in/rohit-chintala-768016103/",
+    "email": "rohit.chintala@gmail.com",
+    "phone": "+1 (609) 420-7929"
+  }
+}

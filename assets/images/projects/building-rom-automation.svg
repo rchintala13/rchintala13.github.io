@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" font-family="IBM Plex Mono, SFMono-Regular, Consolas, monospace" letter-spacing="0.6">
+<title>PN-02 building-rom-automation pipeline schematic</title>
+<desc>Six-stage pipeline from ResStock IDFs through EnergyPlus simulation and two-pass EKF 4R2C system identification to JSON outputs, with three readouts.</desc>
+<defs>
+<pattern id="minor" width="16" height="16" patternUnits="userSpaceOnUse">
+<path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/>
+</pattern>
+<pattern id="major" width="80" height="80" patternUnits="userSpaceOnUse">
+<path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/>
+</pattern>
+<marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+<path d="M0 0L8 4L0 8z" fill="#EAF3FB" fill-opacity="0.7"/>
+</marker>
+<marker id="ahA" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+<path d="M0 0L8 4L0 8z" fill="#9FDBFF"/>
+</marker>
+</defs>
+
+<rect x="0" y="0" width="640" height="360" fill="#0D3B66"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#minor)"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#major)"/>
+
+<rect x="16" y="16" width="608" height="24" fill="none" stroke="#EAF3FB" stroke-opacity="0.6" stroke-width="1"/>
+<text x="28" y="32" font-size="10" fill="#EAF3FB">PN-02 · BUILDING-ROM-AUTOMATION · RESSTOCK → EPLUS → EKF SYSID</text>
+
+<g stroke="#EAF3FB" stroke-opacity="0.6" stroke-width="1" fill="#0D3B66">
+<rect x="32" y="72" width="160" height="64"/>
+<rect x="240" y="72" width="160" height="64"/>
+<rect x="448" y="72" width="160" height="64"/>
+<rect x="448" y="208" width="160" height="64"/>
+<rect x="32" y="208" width="160" height="64"/>
+</g>
+<rect x="240" y="208" width="160" height="64" fill="#0D3B66" stroke="#9FDBFF" stroke-width="1"/>
+
+<g fill="#EAF3FB" font-size="10">
+<text x="44" y="94">01 RESSTOCK IDFS</text>
+<text x="252" y="94">02 EDIT IDFS</text>
+<text x="460" y="94">03 ENERGYPLUS SIM</text>
+<text x="460" y="230">04 PROCESS OUTPUTS</text>
+<text x="252" y="230" fill="#9FDBFF">05 TWO-PASS EKF</text>
+<text x="44" y="230">06 SYSID OUTPUTS</text>
+</g>
+<g fill="#EAF3FB" fill-opacity="0.7" font-size="9">
+<text x="44" y="112">data/raw/resstock_idfs</text>
+<text x="252" y="112">setpoints · outputs</text>
+<text x="460" y="112">run_epsimulations</text>
+<text x="460" y="248">resampled training CSV</text>
+<text x="252" y="248">augmented-state · 4R2C</text>
+<text x="44" y="248">sysid_summary.json</text>
+<text x="44" y="262">model.json</text>
+</g>
+
+<g stroke="#EAF3FB" stroke-opacity="0.7" stroke-width="1" fill="none">
+<line x1="193" y1="104" x2="238" y2="104" marker-end="url(#ah)"/>
+<line x1="401" y1="104" x2="446" y2="104" marker-end="url(#ah)"/>
+<line x1="528" y1="137" x2="528" y2="206" marker-end="url(#ah)"/>
+<line x1="447" y1="240" x2="402" y2="240" marker-end="url(#ah)"/>
+</g>
+<line x1="239" y1="240" x2="194" y2="240" stroke="#9FDBFF" stroke-width="1" marker-end="url(#ahA)"/>
+
+<g fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6" stroke-width="1">
+<rect x="32" y="302" width="160" height="28"/>
+<rect x="240" y="302" width="160" height="28"/>
+<rect x="448" y="302" width="160" height="28"/>
+</g>
+<g font-size="9" fill="#EAF3FB">
+<text x="44" y="320" fill="#9FDBFF" font-size="11">4R2C</text>
+<text x="108" y="320" fill-opacity="0.7">STATES</text>
+<text x="252" y="320" fill="#9FDBFF" font-size="11">2</text>
+<text x="268" y="320" fill-opacity="0.7">PASSES</text>
+<text x="460" y="320" fill="#9FDBFF" font-size="11">3</text>
+<text x="476" y="320" fill-opacity="0.7">CONFIG FILES</text>
+</g>
+</svg>

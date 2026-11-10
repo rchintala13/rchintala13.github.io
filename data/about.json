@@ -1,0 +1,34 @@
+{
+  "paragraphs": [
+    "I am an Applied Scientist and AI/ML Engineer with 7+ years of experience in production machine learning, predictive analytics and intelligent automation across energy systems, building systems and data-driven business applications.",
+    "At the National Laboratory of the Rockies (NREL), I led the ML surrogates behind the DOE Section 179D Web Calculator. They were trained on hundreds of thousands of EnergyPlus simulations across 16 U.S. climate zones and reach 1.1–3.3% average CVRMSE.",
+    "My recent work covers LLM and agentic AI workflows with deterministic evaluation, MLOps and model observability, and deep reinforcement learning for grid-interactive building control.",
+    "I have 20+ peer-reviewed publications (401 citations, h-index 11) and one U.S. patent."
+  ],
+  "highlights": [
+    {
+      "label": "Focus",
+      "value": "Production ML, LLM agents, MLOps"
+    },
+    {
+      "label": "Latest role",
+      "value": "Researcher, NREL (Jun 2020 – Apr 2026)"
+    },
+    {
+      "label": "Degree",
+      "value": "Ph.D., Mechanical Engineering, Texas A&M"
+    },
+    {
+      "label": "Experience",
+      "value": "7+ years"
+    },
+    {
+      "label": "Publications",
+      "value": "20+ peer-reviewed, 1 U.S. patent"
+    },
+    {
+      "label": "Base",
+      "value": "Colorado"
+    }
+  ]
+}

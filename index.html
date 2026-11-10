@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rohit Hari Chintala, Ph.D. | Applied Scientist and AI/ML Engineer</title>
+<meta name="description" content="Applied Scientist and AI/ML Engineer building production ML, LLM agents and MLOps for energy and building systems. Technical lead on the DOE 179D Web Calculator.">
+<link rel="canonical" href="https://rchintala13.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rohit Hari Chintala, Ph.D. | Applied Scientist and AI/ML Engineer">
+<meta property="og:description" content="Applied Scientist and AI/ML Engineer building production ML, LLM agents and MLOps for energy and building systems. Technical lead on the DOE 179D Web Calculator.">
+<meta property="og:url" content="https://rchintala13.github.io/">
+<meta property="og:image" content="https://rchintala13.github.io/assets/images/social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#15395B">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385 .6 .113 .82-.258 .82-.577 0-.285-.01-1.04-.015-2.04-3.338 .724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744 .084-.729 .084-.729 1.205 .084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 .998 .108-.776 .417-1.305 .76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31 .465-2.38 1.235-3.22-.135-.303-.54-1.523 .105-3.176 0 0 1.005-.322 3.3 1.23 .96-.267 1.98-.399 3-.405 1.02 .006 2.04 .138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23 .645 1.653 .24 2.873 .12 3.176 .765 .84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92 .42 .36 .81 1.096 .81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315 .21 .69 .825 .57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138 .92-2.063 2.063-2.063 1.14 0 2.064 .925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227 .792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="mark" href="#top" aria-label="Rohit Hari Chintala, Ph.D. (top of page)">RHC</a>
+    <nav class="nav-desk" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cv" href="assets/files/rohit-ph-d-resume.pdf" download>Résumé</a>
+    </nav>
+    <details class="nav-mobile">
+      <summary>Menu</summary>
+      <nav aria-label="Mobile">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/files/rohit-ph-d-resume.pdf" download>Résumé (PDF)</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="role-line">Applied Scientist and AI/ML Engineer</span><span class="sep" aria-hidden="true"> · </span><span class="loc">Colorado</span></p>
+      <h1 id="hero-title">Rohit Hari Chintala, <span class="deg">Ph.D.</span></h1>
+      <p class="lead">I build production-grade machine learning, LLM agent and MLOps systems for energy and building applications. I was the technical lead for the ML surrogates behind the DOE 179D Web Calculator, a nationally deployed, IRS-supported platform. I turn complex simulation and operational data into reliable, explainable AI.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#projects">View projects <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="assets/files/rohit-ph-d-resume.pdf" download>Résumé <svg class="ic" aria-hidden="true"><use href="#i-download"/></svg></a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="assets/images/rohit-ph-d.jpg" alt="Portrait of Rohit Hari Chintala, Ph.D.">
+      <figcaption>Fig. 1 · Rohit Hari Chintala, Ph.D.</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <ul class="readouts">
+      <li><strong class="v">1.1–3.3%</strong><span class="k">avg CVRMSE, DOE 179D surrogates</span></li>
+      <li><strong class="v">16</strong><span class="k">U.S. climate zones modeled</span></li>
+      <li><strong class="v">20+</strong><span class="k">peer-reviewed publications</span></li>
+      <li><strong class="v">7+ yrs</strong><span class="k">building production ML</span></li>
+    </ul>
+  </div>
+  <div class="spec-band">
+    <div class="wrap">
+      <ul class="spec" aria-label="Quick facts">
+        <li><span class="sl">Focus</span><span class="sv">Production ML, LLM agents, MLOps</span></li>
+        <li><span class="sl">Base</span><span class="sv">Colorado</span></li>
+        <li><span class="sl">Research record</span><span class="sv">401 citations, h-index 11, 1 U.S. patent</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sect about" id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <header>
+      <p class="kicker">01 — Profile</p>
+      <h2 id="about-title">About</h2>
+    </header>
+    <div class="prose">
+      <p>I am an Applied Scientist and AI/ML Engineer with 7+ years of experience in production machine learning, predictive analytics and intelligent automation across energy systems, building systems and data-driven business applications.</p>
+      <p>At the National Laboratory of the Rockies (NREL), I led the ML surrogates behind the DOE Section 179D Web Calculator. They were trained on hundreds of thousands of EnergyPlus simulations for a nationally deployed, IRS-supported platform.</p>
+      <p>My recent work covers LLM and agentic AI workflows with deterministic evaluation, MLOps and model observability, and deep reinforcement learning for grid-interactive building control.</p>
+      <p>My peer-reviewed work has 401 citations and an h-index of 11, and I hold one U.S. patent.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="sect exp" id="experience" aria-labelledby="exp-title">
+  <div class="wrap">
+    <header class="sect-head">
+      <div>
+        <p class="kicker">02 — Career</p>
+        <h2 id="exp-title">Experience</h2>
+      </div>
+    </header>
+
+    <article class="role">
+      <div class="role-side">
+        <p class="co">National Laboratory of the Rockies (NREL)</p>
+        <p class="meta">Jun 2020 – Apr 2026</p>
+        <p class="meta">Golden, CO</p>
+      </div>
+      <div class="role-main">
+        <h3>Researcher, Residential Buildings Group</h3>
+        <p class="role-desc">Led production machine learning for the DOE Section 179D Web Calculator, owning data engineering, model development, validation, deployment and monitoring. Also worked on LLM agents, reinforcement learning, fault detection and building control.</p>
+        <ul class="bullets">
+          <li>Led development of production ML surrogates for the DOE Section 179D Web Calculator, a nationally deployed, IRS-supported platform; models achieve 1.1–3.3% average CVRMSE across 16 U.S. climate zones.</li>
+          <li>Trained ridge regression and deep neural network surrogates on EnergyPlus simulations to estimate energy-cost savings across 2 commercial building types, 6 HVAC system types and 16 climate zones.</li>
+          <li>Built a LangGraph and LLM agentic workflow to automate grey-box RC model identification, validated by deterministic criteria: RMSE ≤ 0.5°C, parameter CV ≤ 0.15 and a winning-candidate margin above 0.1°C.</li>
+          <li>Operationalized MLOps and observability with MLflow, DVC, Evidently, Prometheus, Grafana and GitHub Actions, plus AWS SageMaker and Azure ML, covering versioning, drift detection and monitoring.</li>
+          <li>Co-developed a two-stage deep reinforcement learning framework for grid-interactive multi-zone building control, combining evolution strategies with PPO and benchmarking against MPC baselines.</li>
+          <li>Created an HVAC fault-detection method using thermostat drive-cycle data and Extended Kalman Filters, published in Energy and Buildings (2021), with sensitivity-analysis findings in Applied Thermal Engineering (2024).</li>
+        </ul>
+        <ul class="chips" aria-label="Technologies at NREL">
+          <li>Python</li><li>PyTorch</li><li>LangGraph</li><li>EnergyPlus</li><li>MLflow</li><li>DVC</li><li>Evidently</li><li>Prometheus</li><li>Grafana</li><li>GitHub Actions</li><li>AWS SageMaker</li><li>Azure ML</li>
+        </ul>
+        <p class="earlier"><span class="tag">Earlier</span> Postdoctoral Researcher, Residential Buildings Group · Jan 2019 – May 2020</p>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="role-side">
+        <p class="co">Opera Solutions</p>
+        <p class="meta">Jun 2018 – Dec 2018</p>
+        <p class="meta">San Diego, CA</p>
+      </div>
+      <div class="role-main">
+        <h3>Senior Analytics Specialist</h3>
+        <ul class="bullets">
+          <li>Directed a data analytics team developing statistical and machine learning models to forecast used-vehicle floor prices at auction, supporting bidding strategies.</li>
+          <li>Devised model validation and performance-reporting workflows to assess forecast reliability and model suitability before production deployment.</li>
+          <li>Translated forecast results into pricing and bidding recommendations for business stakeholders, supporting production model adoption.</li>
+        </ul>
+        <ul class="chips" aria-label="Technologies at Opera Solutions">
+          <li>Statistical modeling</li><li>Machine learning</li><li>Forecasting</li><li>Data analytics</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="sect work" id="projects" aria-labelledby="work-title">
+  <div class="wrap">
+    <header class="sect-head">
+      <div>
+        <p class="kicker">03 — Work</p>
+        <h2 id="work-title">Projects</h2>
+      </div>
+      <p class="lede">Every project is drawn as a small diagram of what it does. Open a project for the full write-up, then follow the source code.</p>
+    </header>
+
+    <ul class="cards">
+
+      <li class="card card--full">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Diagram: raw EnergyPlus CSVs are scanned, catalogued and trained, and savings are baseline minus proposed">
+            <g class="ln">
+              <rect class="bx" x="16" y="28" width="112" height="48"/>
+              <rect class="bx" x="144" y="28" width="112" height="48"/>
+              <rect class="bx" x="272" y="28" width="112" height="48"/>
+              <rect class="bx sg" x="272" y="122" width="112" height="48"/>
+              <rect class="bx dash" x="16" y="122" width="200" height="48"/>
+              <path d="M128 52H144M256 52H272M328 76V122M272 146H216"/>
+            </g>
+            <text class="tx" x="30" y="57">Scan</text>
+            <text class="tx" x="158" y="57">Catalog</text>
+            <text class="tx" x="286" y="57">Train</text>
+            <text class="tx sg" x="286" y="151">Savings</text>
+            <text class="tx" x="30" y="151">Baseline − proposed</text>
+            <text class="tx mut" x="16" y="100">EnergyPlus CSVs in</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Surrogate modeling</p>
+          <h3><a href="projects/ml-building-models.html">ML-building-models</a></h3>
+          <p class="desc">A schema-driven ML pipeline that builds surrogate models from EnergyPlus simulation data to estimate building energy consumption from easily available building properties. It spans building types, HVAC systems and climate zones.</p>
+          <ul class="chips" aria-label="Main technologies"><li>Python</li><li>EnergyPlus</li><li>Ridge regression</li></ul>
+          <p class="links"><a href="projects/ml-building-models.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/ML-building-models">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Diagram: a 4R2C thermal network linking outdoor air, a wall node and a zone node, with an EKF badge">
+            <g class="ln">
+              <circle class="bx" cx="40" cy="98" r="20"/>
+              <path d="M60 98H78l6-10 12 20 12-20 12 20 12-20 6 10H226"/>
+              <path d="M130 98V112M116 112H144M116 120H144M130 120V156"/>
+              <path d="M240 98V112M226 112H254M226 120H254M240 120V156"/>
+            </g>
+            <circle class="fl" cx="130" cy="98" r="3.5"/>
+            <circle class="fl" cx="240" cy="98" r="3.5"/>
+            <text class="tx tc" x="40" y="142">Outdoor</text>
+            <text class="tx tc" x="130" y="176">Wall</text>
+            <text class="tx tc" x="240" y="176">Zone</text>
+            <text class="tx" x="16" y="30">4R2C network</text>
+            <rect class="sf" x="300" y="16" width="84" height="28"/>
+            <text class="tx tc tw" x="342" y="35">EKF</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">System identification</p>
+          <h3><a href="projects/building-rom-automation.html">building-rom-automation</a></h3>
+          <p class="desc">Automates reduced-order building envelope models, trained and tested on EnergyPlus simulation data.</p>
+          <ul class="chips" aria-label="Main technologies"><li>Python</li><li>EnergyPlus</li><li>Extended Kalman Filter</li></ul>
+          <p class="links"><a href="projects/building-rom-automation.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/building-rom-automation">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Diagram: a grid of commercial buildings, one highlighted, for a community of 148 buildings">
+            <defs>
+              <g id="bdA"><rect class="bx" x="0" y="8" width="34" height="26"/><polygon class="bx" points="0,8 10,0 44,0 34,8"/></g>
+              <g id="bdH"><rect class="hx" x="0" y="8" width="34" height="26"/><polygon class="hx" points="0,8 10,0 44,0 34,8"/></g>
+            </defs>
+            <use href="#bdA" x="30" y="12"/><use href="#bdA" x="110" y="12"/><use href="#bdA" x="190" y="12"/><use href="#bdA" x="270" y="12"/>
+            <use href="#bdA" x="30" y="62"/><use href="#bdH" x="110" y="62"/><use href="#bdA" x="190" y="62"/><use href="#bdA" x="270" y="62"/>
+            <use href="#bdA" x="30" y="112"/><use href="#bdA" x="110" y="112"/><use href="#bdA" x="190" y="112"/><use href="#bdA" x="270" y="112"/>
+            <text class="tx" x="30" y="184">148 commercial buildings</text>
+            <text class="tx ts" x="330" y="90">3R2C</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Building modeling</p>
+          <h3><a href="projects/aumc-community-modeling.html">AUMC-community-modeling</a></h3>
+          <p class="desc">Develops 3R2C thermal models for a community of 148 commercial buildings.</p>
+          <ul class="chips" aria-label="Main technologies"><li>Python</li><li>3R2C models</li></ul>
+          <p class="links"><a href="projects/aumc-community-modeling.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/AUMC-community-modeling">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Diagram: a model moves from shadow to canary to promotion, with a rollback boundary">
+            <g class="ln">
+              <rect class="bx" x="16" y="18" width="112" height="40"/>
+              <rect class="bx" x="144" y="18" width="112" height="40"/>
+              <rect class="bx sg" x="272" y="18" width="112" height="40"/>
+              <path d="M128 38H144M256 38H272"/>
+              <path class="dash" d="M16 100H384"/>
+              <path class="dash sg" d="M16 152H384"/>
+            </g>
+            <text class="tx" x="30" y="43">Shadow</text>
+            <text class="tx" x="158" y="43">Canary</text>
+            <text class="tx" x="286" y="43">Promote</text>
+            <text class="tx" x="16" y="86">Promote boundary</text>
+            <text class="tx sg" x="16" y="172">Rollback boundary</text>
+            <polyline class="ln" points="30,132 70,118 110,136 150,120 190,128 230,112 270,122 310,100 350,84" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <circle class="fl" cx="350" cy="84" r="5"/>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">MLOps</p>
+          <h3><a href="projects/modelcanary.html">modelcanary</a></h3>
+          <p class="desc">Progressive delivery for ML models: shadow and canary stages, with automatic promotion or rollback.</p>
+          <ul class="chips" aria-label="Main technologies"><li>FastAPI</li><li>ONNX Runtime</li><li>Prometheus</li></ul>
+          <p class="links"><a href="projects/modelcanary.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/modelcanary">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Chart: active learning reaches the target accuracy with fewer labels than the random baseline">
+            <g class="ln">
+              <path d="M48 20V170H384"/>
+              <path class="dash" d="M48 60H384"/>
+              <path class="dash mut" d="M48 165C140 150 220 120 330 88L384 80"/>
+            </g>
+            <path class="sg" d="M48 165C100 110 160 80 220 68L384 62" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <text class="tx" x="56" y="52">Target accuracy</text>
+            <text class="tx sg" x="236" y="92">Active</text>
+            <text class="tx mut" x="290" y="128">Random</text>
+            <text class="tx" x="300" y="192">Labels</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">ML evaluation</p>
+          <h3><a href="projects/labelbudget.html">labelbudget</a></h3>
+          <p class="desc">A benchmark that reports the labels needed to reach a target accuracy, against a random baseline.</p>
+          <ul class="chips" aria-label="Main technologies"><li>Active learning</li><li>Bootstrap statistics</li><li>Power analysis</li></ul>
+          <p class="links"><a href="projects/labelbudget.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/labelbudget">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Forest plot: four slices with confidence intervals around the gap, one flagged as disparity, two as indeterminate">
+            <g class="ln">
+              <path class="dash" d="M150 24V176"/>
+              <path d="M171 50H234M122 88H206M129 126H160M146 164H216"/>
+            </g>
+            <path class="sg" d="M171 50H234" stroke="currentColor" stroke-width="3"/>
+            <line class="ln dash" x1="122" y1="88" x2="206" y2="88"/>
+            <circle class="sf" cx="202" cy="50" r="5.5"/>
+            <circle class="fl" cx="164" cy="88" r="5"/>
+            <circle class="fl" cx="143" cy="126" r="5"/>
+            <circle class="fl" cx="181" cy="164" r="5"/>
+            <text class="tx" x="16" y="55">Slice A</text>
+            <text class="tx" x="16" y="93">Slice B</text>
+            <text class="tx" x="16" y="131">Slice C</text>
+            <text class="tx" x="16" y="169">Slice D</text>
+            <text class="tx sg" x="240" y="55" font-size="12">DISPARITY</text>
+            <text class="tx" x="240" y="93" font-size="12">INDETERMINATE</text>
+            <text class="tx" x="240" y="131" font-size="12">NO MATERIAL GAP</text>
+            <text class="tx" x="240" y="169" font-size="12">INDETERMINATE</text>
+            <text class="tx tc" x="150" y="16" font-size="12">No gap</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Fairness auditing</p>
+          <h3><a href="projects/sliceguard.html">sliceguard</a></h3>
+          <p class="desc">A fairness slice auditor that stops tiny slices from producing false alarms.</p>
+          <ul class="chips" aria-label="Main technologies"><li>Wilson intervals</li><li>Benjamini-Hochberg</li><li>Statistical testing</li></ul>
+          <p class="links"><a href="projects/sliceguard.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/sliceguard">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Dashboard: a building load line with a forecast band and one flagged anomaly">
+            <path class="fl band" d="M24 100C70 76 110 96 150 70S240 50 290 80S350 66 376 58V92C350 96 330 106 290 112S230 96 150 104S70 118 24 124Z" fill="currentColor" opacity=".16"/>
+            <g class="ln">
+              <path d="M24 112C70 92 110 110 150 88S240 70 290 96S350 84 376 76"/>
+              <path class="dash" d="M290 96C320 88 350 84 376 76"/>
+            </g>
+            <circle class="sf" cx="240" cy="78" r="6"/>
+            <text class="tx ts" x="252" y="66">Anomaly</text>
+            <text class="tx" x="24" y="26">Load</text>
+            <text class="tx" x="96" y="26">Forecast band</text>
+            <text class="tx" x="296" y="150">Forecast</text>
+            <rect class="bx" x="24" y="168" width="110" height="16" rx="0"/>
+            <rect class="sf" x="24" y="168" width="58" height="16"/>
+            <text class="tx" x="144" y="181">Cost by time of use</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Energy analytics</p>
+          <h3><a href="projects/greenpulse-energy-monitoring.html">greenpulse-energy-monitoring</a></h3>
+          <p class="desc">Energy monitoring for commercial buildings, with LSTM demand forecasts up to 7 days ahead.</p>
+          <ul class="chips" aria-label="Main technologies"><li>TypeScript</li><li>React</li><li>TimescaleDB</li></ul>
+          <p class="links"><a href="projects/greenpulse-energy-monitoring.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/greenpulse-energy-monitoring">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Heatmap grid of neighborhoods shaded by predicted value, with one top-scored cell highlighted">
+            <g class="fl">
+              <rect x="24" y="20" width="40" height="28" opacity=".1"/><rect x="68" y="20" width="40" height="28" opacity=".25"/><rect x="112" y="20" width="40" height="28" opacity=".4"/><rect x="156" y="20" width="40" height="28" opacity=".15"/><rect x="200" y="20" width="40" height="28" opacity=".6"/><rect x="244" y="20" width="40" height="28" opacity=".3"/><rect x="288" y="20" width="40" height="28" opacity=".5"/><rect x="332" y="20" width="40" height="28" opacity=".2"/>
+              <rect x="24" y="56" width="40" height="28" opacity=".35"/><rect x="68" y="56" width="40" height="28" opacity=".7"/><rect x="112" y="56" width="40" height="28" opacity=".2"/><rect x="156" y="56" width="40" height="28" opacity=".45"/><rect x="200" y="56" width="40" height="28" opacity=".25"/><rect x="244" y="56" width="40" height="28" opacity=".55"/><rect x="288" y="56" width="40" height="28" opacity=".12"/><rect x="332" y="56" width="40" height="28" opacity=".4"/>
+              <rect x="24" y="92" width="40" height="28" opacity=".5"/><rect x="68" y="92" width="40" height="28" opacity=".15"/><rect x="112" y="92" width="40" height="28" opacity=".8"/><rect x="156" y="92" width="40" height="28" opacity=".3"/><rect x="200" y="92" width="40" height="28" opacity=".45"/><rect x="244" y="92" width="40" height="28" opacity=".2"/><rect x="288" y="92" width="40" height="28" opacity=".65"/><rect x="332" y="92" width="40" height="28" opacity=".3"/>
+              <rect x="24" y="128" width="40" height="28" opacity=".25"/><rect x="68" y="128" width="40" height="28" opacity=".4"/><rect x="112" y="128" width="40" height="28" opacity=".1"/><rect x="156" y="128" width="40" height="28" opacity=".55"/><rect x="200" y="128" width="40" height="28" opacity=".35"/><rect x="244" y="128" width="40" height="28" opacity=".6"/><rect x="288" y="128" width="40" height="28" opacity=".2"/><rect x="332" y="128" width="40" height="28" opacity=".45"/>
+            </g>
+            <rect class="sf" x="288" y="56" width="40" height="28"/>
+            <circle class="ln" cx="308" cy="70" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <text class="tx" x="24" y="186">Lower</text>
+            <text class="tx" x="376" y="186" text-anchor="end">Higher</text>
+            <text class="tx" x="112" y="186">Predicted value</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Predictive modeling</p>
+          <h3><a href="projects/propertyiq-real-estate.html">propertyiq-real-estate</a></h3>
+          <p class="desc">Predicts property values 12 months ahead and scores each property for investment opportunity.</p>
+          <ul class="chips" aria-label="Main technologies"><li>XGBoost</li><li>LightGBM</li><li>Prophet</li></ul>
+          <p class="links"><a href="projects/propertyiq-real-estate.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/propertyiq-real-estate">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Diagram: data flows through four quality gates; a failed check halts the pipeline and sends an alert">
+            <g class="ln">
+              <path d="M16 110H384"/>
+              <path d="M176 110V70M256 110V70M336 110V70M96 110V70"/>
+              <path class="sg" d="M256 70V40"/>
+            </g>
+            <rect class="bx" x="91" y="62" width="10" height="56"/>
+            <rect class="bx" x="171" y="62" width="10" height="56"/>
+            <rect class="bx" x="251" y="62" width="10" height="56"/>
+            <rect class="bx" x="331" y="62" width="10" height="56"/>
+            <rect class="sf" x="200" y="14" width="150" height="26"/>
+            <text class="tx tw tc" x="275" y="32">Halt and alert</text>
+            <text class="tx tc" x="96" y="150">Schema</text>
+            <text class="tx tc" x="176" y="150">Nulls</text>
+            <text class="tx tc" x="256" y="150">Ranges</text>
+            <text class="tx tc" x="336" y="150">Freshness</text>
+            <text class="tx" x="16" y="46">Hourly batches</text>
+            <circle class="fl" cx="60" cy="110" r="4"/><circle class="fl" cx="136" cy="110" r="4"/><circle class="fl" cx="216" cy="110" r="4"/><circle class="fl" cx="296" cy="110" r="4"/>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Data quality</p>
+          <h3><a href="projects/weather-data-pipeline-great-expectations.html">weather-data-pipeline-great-expectations</a></h3>
+          <p class="desc">Validates hourly weather batches from 50+ cities before transforming them into BigQuery tables.</p>
+          <ul class="chips" aria-label="Main technologies"><li>Great Expectations</li><li>dbt</li><li>BigQuery</li></ul>
+          <p class="links"><a href="projects/weather-data-pipeline-great-expectations.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/weather-data-pipeline-great-expectations">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Diagram: data lake layers narrowing from raw zone to dbt models">
+            <rect class="bx" x="20" y="10" width="360" height="26"/>
+            <rect class="bx" x="40" y="46" width="320" height="26"/>
+            <rect class="bx" x="60" y="82" width="280" height="26"/>
+            <rect class="bx" x="80" y="118" width="240" height="26"/>
+            <rect class="sf" x="100" y="154" width="200" height="26"/>
+            <text class="tx tc" x="200" y="28">Raw zone</text>
+            <text class="tc tx" x="200" y="64">Processed Parquet</text>
+            <text class="tc tx" x="200" y="100">Hive-style partitions</text>
+            <text class="tc tx" x="200" y="136">BigQuery external tables</text>
+            <text class="tc tx tw" x="200" y="172">dbt models</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Data lake</p>
+          <h3><a href="projects/nyc-taxi-data-lake-gcp.html">nyc-taxi-data-lake-gcp</a></h3>
+          <p class="desc">Processes NYC taxi trip records with Dataproc and PySpark, then serves them through BigQuery.</p>
+          <ul class="chips" aria-label="Main technologies"><li>PySpark</li><li>Dataproc</li><li>BigQuery</li></ul>
+          <p class="links"><a href="projects/nyc-taxi-data-lake-gcp.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/nyc-taxi-data-lake-gcp">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Diagram: files land in S3, a Lambda trigger starts Glue jobs, the catalog feeds Athena and QuickSight">
+            <g class="ln">
+              <rect class="bx" x="16" y="22" width="112" height="40"/>
+              <rect class="bx" x="144" y="22" width="112" height="40"/>
+              <rect class="bx sg" x="272" y="22" width="112" height="40"/>
+              <rect class="bx" x="272" y="100" width="112" height="40"/>
+              <rect class="bx" x="144" y="100" width="112" height="40"/>
+              <rect class="bx" x="16" y="100" width="112" height="40"/>
+              <path d="M128 42H144M256 42H272M328 62V100M272 120H256M144 120H128"/>
+            </g>
+            <text class="tx" x="30" y="47">S3 landing</text>
+            <text class="tx" x="158" y="47">Lambda</text>
+            <text class="tx sg" x="286" y="47">Glue jobs</text>
+            <text class="tx" x="286" y="125">Catalog</text>
+            <text class="tx" x="158" y="125">Athena</text>
+            <text class="tx" x="30" y="125">QuickSight</text>
+            <text class="tx mut" x="16" y="172">Infrastructure as code</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Cloud ETL</p>
+          <h3><a href="projects/youtube-trending-etl-aws.html">youtube-trending-etl-aws</a></h3>
+          <p class="desc">Ingests YouTube trending data on AWS, transforms it with Glue, and serves Athena and QuickSight.</p>
+          <ul class="chips" aria-label="Main technologies"><li>AWS Glue</li><li>Athena</li><li>QuickSight</li></ul>
+          <p class="links"><a href="projects/youtube-trending-etl-aws.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/youtube-trending-etl-aws">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Heatmap of listening mood by day of week and time of day">
+            <text class="tx tc" x="127" y="22">M</text><text class="tx tc" x="167" y="22">T</text><text class="tx tc" x="207" y="22">W</text><text class="tx tc" x="247" y="22">T</text><text class="tx tc" x="287" y="22">F</text><text class="tx tc" x="327" y="22">S</text><text class="tx tc" x="367" y="22">S</text>
+            <text class="tx" x="16" y="58">Morning</text>
+            <text class="tx" x="16" y="98">Afternoon</text>
+            <text class="tx" x="16" y="138">Evening</text>
+            <text class="tx" x="16" y="178">Night</text>
+            <g class="fl">
+              <rect x="110" y="32" width="34" height="30" opacity=".15"/><rect x="150" y="32" width="34" height="30" opacity=".35"/><rect x="190" y="32" width="34" height="30" opacity=".6"/><rect x="230" y="32" width="34" height="30" opacity=".3"/><rect x="270" y="32" width="34" height="30" opacity=".5"/><rect x="310" y="32" width="34" height="30" opacity=".8"/><rect x="350" y="32" width="34" height="30" opacity=".25"/>
+              <rect x="110" y="72" width="34" height="30" opacity=".4"/><rect x="150" y="72" width="34" height="30" opacity=".2"/><rect x="190" y="72" width="34" height="30" opacity=".45"/><rect x="230" y="72" width="34" height="30" opacity=".7"/><rect x="270" y="72" width="34" height="30" opacity=".25"/><rect x="310" y="72" width="34" height="30" opacity=".35"/><rect x="350" y="72" width="34" height="30" opacity=".55"/>
+              <rect x="110" y="112" width="34" height="30" opacity=".6"/><rect x="150" y="112" width="34" height="30" opacity=".5"/><rect x="190" y="112" width="34" height="30" opacity=".2"/><rect x="230" y="112" width="34" height="30" opacity=".4"/><rect x="270" y="112" width="34" height="30" opacity=".15"/><rect x="310" y="112" width="34" height="30" opacity=".3"/><rect x="350" y="112" width="34" height="30" opacity=".65"/>
+              <rect x="110" y="152" width="34" height="30" opacity=".2"/><rect x="150" y="152" width="34" height="30" opacity=".45"/><rect x="190" y="152" width="34" height="30" opacity=".3"/><rect x="230" y="152" width="34" height="30" opacity=".1"/><rect x="270" y="152" width="34" height="30" opacity=".5"/><rect x="310" y="152" width="34" height="30" opacity=".4"/><rect x="350" y="152" width="34" height="30" opacity=".2"/>
+            </g>
+            <rect class="sf" x="310" y="112" width="34" height="30"/>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Data platform</p>
+          <h3><a href="projects/spotify-listening-analytics.html">spotify-listening-analytics</a></h3>
+          <p class="desc">Extracts personal Spotify listening history into Snowflake and presents it in a Streamlit dashboard.</p>
+          <ul class="chips" aria-label="Main technologies"><li>Snowflake</li><li>dbt</li><li>Airflow</li></ul>
+          <p class="links"><a href="projects/spotify-listening-analytics.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/spotify-listening-analytics">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+      <li class="card">
+        <figure class="viz">
+          <svg viewBox="0 0 400 200" role="img" aria-label="Ranked bars of repositories by popularity tier: mega, popular, notable, emerging">
+            <text class="tx" x="16" y="48">Mega</text>
+            <text class="tx" x="16" y="90">Popular</text>
+            <text class="tx" x="16" y="132">Notable</text>
+            <text class="tx" x="16" y="174">Emerging</text>
+            <rect class="sf" x="110" y="30" width="270" height="26"/>
+            <rect class="fl" x="110" y="72" width="200" height="26" opacity=".5"/>
+            <rect class="fl" x="110" y="114" width="140" height="26" opacity=".32"/>
+            <rect class="fl" x="110" y="156" width="80" height="26" opacity=".18"/>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="cat">Ecosystem analytics</p>
+          <h3><a href="projects/github-repository-intelligence.html">github-repository-intelligence</a></h3>
+          <p class="desc">Ingests GitHub repository metadata and commit history, then analyzes trends with PySpark.</p>
+          <ul class="chips" aria-label="Main technologies"><li>GitHub API</li><li>Snowflake</li><li>PySpark</li></ul>
+          <p class="links"><a href="projects/github-repository-intelligence.html">Project page <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="https://github.com/rchintala13/github-repository-intelligence">Source <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="sect skills" id="skills" aria-labelledby="skills-title">
+  <div class="wrap">
+    <header class="sect-head">
+      <div>
+        <p class="kicker">04 — Skills</p>
+        <h2 id="skills-title">The production loop</h2>
+      </div>
+      <p class="lede">Six stages take a model from simulation to monitoring. Each stage draws on the skill groups named under it, listed in full below.</p>
+    </header>
+
+    <ol class="loop">
+      <li><span class="node">01</span><h3>Simulate</h3><p>Physics-based building simulation as training data.</p><p class="from">Vision &amp; Building Energy</p></li>
+      <li><span class="node">02</span><h3>Model</h3><p>Surrogates, forecasts and deep neural networks.</p><p class="from">Machine Learning · Deep Learning</p></li>
+      <li><span class="node">03</span><h3>Validate</h3><p>Uncertainty, robustness and explanation checks.</p><p class="from">Forecasting &amp; Validation</p></li>
+      <li><span class="node">04</span><h3>Control</h3><p>LLM agents and reinforcement learning for control.</p><p class="from">Generative &amp; Agentic AI · RL &amp; Control</p></li>
+      <li><span class="node">05</span><h3>Ship</h3><p>Serving APIs, containers and cloud platforms.</p><p class="from">MLOps &amp; Cloud</p></li>
+      <li><span class="node">06</span><h3>Monitor</h3><p>Drift, versions and metrics once models are live.</p><p class="from">MLOps &amp; Cloud</p></li>
+    </ol>
+
+    <div class="groups">
+      <div class="grp"><h3>Languages &amp; Data</h3><ul class="tagset"><li>Python</li><li>SQL</li><li>C</li><li>C++</li><li>MATLAB</li><li>PySpark</li><li>Git</li><li>Power BI</li></ul></div>
+      <div class="grp"><h3>Machine Learning</h3><ul class="tagset"><li>Supervised Learning</li><li>Ridge/Lasso Regression</li><li>Random Forest</li><li>Gradient Boosting</li><li>XGBoost</li><li>scikit-learn</li><li>Feature Engineering</li><li>Cross-Validation</li><li>A/B Testing</li><li>Hyperparameter Optimization</li><li>Transfer Learning</li><li>Statistical Analysis</li></ul></div>
+      <div class="grp"><h3>Deep Learning</h3><ul class="tagset"><li>PyTorch</li><li>TensorFlow</li><li>NumPy</li><li>SciPy</li><li>Deep Neural Networks</li><li>Transformer-Based Models</li><li>Sequence Modeling</li><li>Physics-Informed ML</li></ul></div>
+      <div class="grp"><h3>Generative &amp; Agentic AI</h3><ul class="tagset"><li>LLMs</li><li>LangGraph</li><li>Multi-Agent Workflows</li><li>Prompt Engineering</li><li>Context Design</li><li>LLM Evaluation &amp; Benchmarking</li></ul></div>
+      <div class="grp"><h3>RL &amp; Control</h3><ul class="tagset"><li>PPO</li><li>Evolution Strategies</li><li>Policy Gradient Methods</li><li>Gradient-Free Optimization</li><li>Model Predictive Control</li><li>Distributed Multi-Agent Optimization</li></ul></div>
+      <div class="grp"><h3>MLOps &amp; Cloud</h3><ul class="tagset"><li>MLflow</li><li>DVC</li><li>Evidently</li><li>FastAPI</li><li>Docker</li><li>Kubernetes</li><li>CI/CD</li><li>GitHub Actions</li><li>AWS SageMaker</li><li>Azure ML</li><li>Apache Spark</li><li>Model Monitoring</li></ul></div>
+      <div class="grp"><h3>Forecasting &amp; Validation</h3><ul class="tagset"><li>Time-Series Forecasting</li><li>Kalman Filtering</li><li>System Identification</li><li>Uncertainty Quantification</li><li>SHAP</li><li>Explainable AI</li><li>Robustness Testing</li><li>Load Testing (Locust)</li></ul></div>
+      <div class="grp"><h3>Vision &amp; Building Energy</h3><ul class="tagset"><li>Semantic Segmentation</li><li>OCR</li><li>Vision-Language Models</li><li>EnergyPlus</li><li>OpenStudio</li><li>ResStock</li><li>IfcOpenShell</li><li>HVAC Fault Detection</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="sect edu-sec" id="education" aria-labelledby="edu-title">
+  <div class="wrap">
+    <header class="sect-head">
+      <div>
+        <p class="kicker">05 — Education</p>
+        <h2 id="edu-title">Education</h2>
+      </div>
+    </header>
+    <ul class="edu">
+      <li>
+        <p class="meta">2018</p>
+        <h3>Ph.D., Mechanical Engineering</h3>
+        <p>Texas A&amp;M University</p>
+      </li>
+      <li>
+        <p class="meta">2011</p>
+        <h3>M.S., Mechanical Engineering</h3>
+        <p>Texas A&amp;M University</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sect contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <header class="sect-head">
+      <div>
+        <p class="kicker">06 — Contact</p>
+        <h2 id="contact-title">Get in touch</h2>
+      </div>
+      <p class="lede">Interested in production ML, LLM agents or MLOps for energy and building systems? Reach out by email, phone or LinkedIn.</p>
+    </header>
+    <a class="mail-big" href="mailto:rohit.chintala@gmail.com">rohit.chintala@gmail.com</a>
+    <ul class="contact-list">
+      <li><a href="tel:+16094207929"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="cl">Phone</span>+1 (609) 420-7929</a></li>
+      <li><a href="https://www.linkedin.com/in/rohit-chintala-768016103/"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg><span class="cl">LinkedIn</span>Open profile</a></li>
+      <li><a href="https://github.com/rchintala13"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg><span class="cl">GitHub</span>rchintala13</a></li>
+      <li><a href="assets/files/rohit-ph-d-resume.pdf" download><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg><span class="cl">Résumé</span>Download PDF</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Rohit Hari Chintala, Ph.D. · Applied Scientist and AI/ML Engineer</p>
+    <p>Colorado · Sheet 1 of 1</p>
+  </div>
+</footer>
+</body>
+</html>

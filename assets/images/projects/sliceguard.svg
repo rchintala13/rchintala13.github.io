@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+<title>PN-06 SLICEGUARD fairness slice audit flow</title>
+<desc>Blueprint schematic: synthetic records flow through slice enumeration, Wilson and Newcombe intervals with MDE, Benjamini-Hochberg across all slices, and verdicts, with a naive raw-gap ranking compared against the guarded report.</desc>
+<defs>
+<pattern id="minor" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05"/></pattern>
+<pattern id="major" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09"/></pattern>
+<marker id="arr" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 z" fill="#EAF3FB" fill-opacity="0.7"/></marker>
+<marker id="arrA" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 z" fill="#9FDBFF"/></marker>
+</defs>
+<rect x="0" y="0" width="640" height="360" fill="#0D3B66"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#minor)"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#major)"/>
+
+<g font-family="IBM Plex Mono, SFMono-Regular, Consolas, monospace" letter-spacing="0.6" fill="#EAF3FB">
+<rect x="16" y="16" width="608" height="28" fill="none" stroke="#EAF3FB" stroke-opacity="0.6" stroke-width="1"/>
+<text x="28" y="34" font-size="11" fill="#9FDBFF">PN-06 · SLICEGUARD · FAIRNESS SLICE AUDIT</text>
+
+<rect x="16" y="66" width="104" height="72" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6"/>
+<text x="28" y="84" font-size="11">RECORDS</text>
+<text x="28" y="100" font-size="9" fill-opacity="0.7">SYNTHETIC</text>
+<text x="28" y="112" font-size="9" fill-opacity="0.7">PLANTED TRUTH</text>
+
+<rect x="142" y="66" width="104" height="72" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6"/>
+<text x="154" y="84" font-size="11">SLICES</text>
+<text x="154" y="100" font-size="9" fill-opacity="0.7">ENUMERATED</text>
+<text x="154" y="112" font-size="9" fill-opacity="0.7">MIN 10 ROWS</text>
+
+<rect x="268" y="66" width="104" height="72" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6"/>
+<text x="280" y="84" font-size="11">INTERVALS</text>
+<text x="280" y="100" font-size="9" fill-opacity="0.7">WILSON</text>
+<text x="280" y="112" font-size="9" fill-opacity="0.7">NEWCOMBE</text>
+<text x="280" y="124" font-size="9" fill-opacity="0.7">MDE PER SLICE</text>
+
+<rect x="394" y="66" width="104" height="72" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6"/>
+<text x="406" y="84" font-size="11">BH FDR</text>
+<text x="406" y="100" font-size="9" fill-opacity="0.7">ACROSS ALL</text>
+<text x="406" y="112" font-size="9" fill-opacity="0.7">SLICES</text>
+<text x="406" y="124" font-size="9" fill-opacity="0.7">Q = 0.05</text>
+
+<rect x="520" y="66" width="104" height="72" fill="#0D3B66" stroke="#9FDBFF" stroke-width="1"/>
+<text x="532" y="84" font-size="11" fill="#9FDBFF">VERDICTS</text>
+<text x="532" y="100" font-size="9" fill-opacity="0.7">DISPARITY</text>
+<text x="532" y="112" font-size="9" fill-opacity="0.7">NO_MATERIAL</text>
+<text x="532" y="124" font-size="9" fill-opacity="0.7">INDETERMINATE</text>
+
+<line x1="122" y1="102" x2="140" y2="102" stroke="#9FDBFF" stroke-width="1" marker-end="url(#arrA)"/>
+<line x1="248" y1="102" x2="266" y2="102" stroke="#9FDBFF" stroke-width="1" marker-end="url(#arrA)"/>
+<line x1="374" y1="102" x2="392" y2="102" stroke="#9FDBFF" stroke-width="1" marker-end="url(#arrA)"/>
+<line x1="500" y1="102" x2="518" y2="102" stroke="#9FDBFF" stroke-width="1" marker-end="url(#arrA)"/>
+
+<line x1="194" y1="138" x2="194" y2="184" stroke="#EAF3FB" stroke-opacity="0.6" stroke-width="1" marker-end="url(#arr)"/>
+<line x1="572" y1="138" x2="572" y2="184" stroke="#9FDBFF" stroke-width="1" marker-end="url(#arrA)"/>
+
+<rect x="142" y="186" width="104" height="56" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6"/>
+<text x="154" y="204" font-size="11">NAIVE</text>
+<text x="154" y="220" font-size="9" fill-opacity="0.7">RAW GAP RANK</text>
+<text x="154" y="232" font-size="9" fill-opacity="0.7">NO INTERVALS</text>
+
+<rect x="520" y="186" width="104" height="56" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6"/>
+<text x="532" y="204" font-size="11">REPORT</text>
+<text x="532" y="220" font-size="9" fill-opacity="0.7">SIDE BY SIDE</text>
+<text x="532" y="232" font-size="9" fill-opacity="0.7">GUARDED vs RAW</text>
+
+<line x1="248" y1="214" x2="518" y2="214" stroke="#EAF3FB" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+<text x="330" y="208" font-size="9" fill-opacity="0.7">GENERIC vs GUARDED</text>
+
+<line x1="16" y1="262" x2="624" y2="262" stroke="#EAF3FB" stroke-opacity="0.4" stroke-width="1"/>
+
+<rect x="16" y="276" width="192" height="56" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6"/>
+<text x="30" y="296" font-size="9" fill-opacity="0.7">EVALUATIONS</text>
+<text x="30" y="318" font-size="11" fill="#9FDBFF">6,000</text>
+
+<rect x="224" y="276" width="192" height="56" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6"/>
+<text x="238" y="296" font-size="9" fill-opacity="0.7">PLANTED DISPARITIES</text>
+<text x="238" y="318" font-size="11" fill="#9FDBFF">2 x 9 PTS</text>
+
+<rect x="432" y="276" width="192" height="56" fill="#0D3B66" stroke="#EAF3FB" stroke-opacity="0.6"/>
+<text x="446" y="296" font-size="9" fill-opacity="0.7">MIN SLICE SIZE</text>
+<text x="446" y="318" font-size="11" fill="#9FDBFF">10 ROWS</text>
+</g>
+</svg>

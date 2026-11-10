@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+<title>PN-05 labelbudget schematic</title>
+<desc>Synthetic dataset, strategies and logistic model feed a multi-seed active-learning runner, which feeds stats, a guarded report and the demo. Readouts: 97% target, 10 seeds, 25 tests.</desc>
+<defs>
+<style>
+.t{font-family:"IBM Plex Mono, SFMono-Regular, Consolas, monospace";letter-spacing:.06em;fill:#EAF3FB}
+.h{font-size:10px}
+.s{font-size:9px;fill-opacity:.7}
+.n{font-size:11px;fill:#9FDBFF}
+.b{fill:#0D3B66;stroke:#EAF3FB;stroke-opacity:.6;stroke-width:1}
+.k{stroke:#9FDBFF;stroke-opacity:1}
+.w{fill:none;stroke:#EAF3FB;stroke-opacity:.6;stroke-width:1}
+.a{fill:none;stroke:#9FDBFF;stroke-width:1}
+</style>
+<pattern id="g1" width="16" height="16" patternUnits="userSpaceOnUse">
+<path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/>
+</pattern>
+<pattern id="g2" width="80" height="80" patternUnits="userSpaceOnUse">
+<path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/>
+</pattern>
+<marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M0 0L10 5L0 10z" fill="#EAF3FB" fill-opacity="0.7"/>
+</marker>
+<marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M0 0L10 5L0 10z" fill="#9FDBFF"/>
+</marker>
+</defs>
+
+<rect x="0" y="0" width="640" height="360" fill="#0D3B66"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#g1)"/>
+<rect x="0" y="0" width="640" height="360" fill="url(#g2)"/>
+
+<rect x="16" y="16" width="608" height="24" fill="#EAF3FB" fill-opacity="0.06" stroke="#EAF3FB" stroke-opacity="0.4" stroke-width="1"/>
+<text x="28" y="32" class="t h">PN-05 · LABELBUDGET · ACTIVE-LEARNING BENCHMARK</text>
+
+<path class="w" d="M182 96H208V170H236" marker-end="url(#m)"/>
+<path class="w" d="M182 176H236" marker-end="url(#m)"/>
+<path class="w" d="M182 256H208V200H236" marker-end="url(#m)"/>
+<path class="a" d="M376 170H396V126H416" marker-end="url(#ma)"/>
+<path class="a" d="M376 206H396V230H416" marker-end="url(#ma)"/>
+<path class="a" d="M516 156V200" marker-end="url(#ma)"/>
+<path class="a" d="M516 260V290" marker-end="url(#ma)"/>
+
+<rect class="b" x="32" y="70" width="150" height="52"/>
+<text x="40" y="90" class="t h">DATASET</text>
+<text x="40" y="106" class="t s">planted boundary</text>
+
+<rect class="b" x="32" y="150" width="150" height="52"/>
+<text x="40" y="170" class="t h">STRATEGIES</text>
+<text x="40" y="186" class="t s">5 acquisition rules</text>
+
+<rect class="b" x="32" y="230" width="150" height="52"/>
+<text x="40" y="250" class="t h">MODEL</text>
+<text x="40" y="266" class="t s">logistic, Newton/IRLS</text>
+
+<rect class="b k" x="236" y="150" width="140" height="76"/>
+<text x="244" y="176" class="t h">RUNNER</text>
+<text x="244" y="192" class="t s">multi-seed loop</text>
+<text x="244" y="208" class="t s">fixed label budget</text>
+
+<rect class="b k" x="416" y="96" width="200" height="60"/>
+<text x="424" y="116" class="t h">STATS</text>
+<text x="424" y="132" class="t s">paired bootstrap CI</text>
+<text x="424" y="146" class="t s">exact sign test · power</text>
+
+<rect class="b k" x="416" y="200" width="200" height="60"/>
+<text x="424" y="220" class="t h">REPORT</text>
+<text x="424" y="236" class="t s">guarded claims</text>
+<text x="424" y="250" class="t s">budget · cost · ASCII bands</text>
+
+<rect class="b k" x="416" y="290" width="200" height="40"/>
+<text x="424" y="308" class="t h">DEMO</text>
+<text x="424" y="322" class="t s">python -m src.demo</text>
+
+<rect class="b" x="32" y="300" width="120" height="36"/>
+<text x="40" y="315" class="t n">97%</text>
+<text x="40" y="328" class="t s">TARGET ACCURACY</text>
+
+<rect class="b" x="168" y="300" width="120" height="36"/>
+<text x="176" y="315" class="t n">10</text>
+<text x="176" y="328" class="t s">MIN SEEDS</text>
+
+<rect class="b" x="304" y="300" width="96" height="36"/>
+<text x="312" y="315" class="t n">25</text>
+<text x="312" y="328" class="t s">UNIT TESTS</text>
+</svg>

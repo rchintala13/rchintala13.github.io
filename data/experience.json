@@ -1,0 +1,62 @@
+{
+  "roles": [
+    {
+      "company": "National Laboratory of the Rockies (NREL)",
+      "logo": "assets/images/logos/nrel.svg",
+      "title": "Researcher, Residential Buildings Group",
+      "start": "Jun 2020",
+      "end": "Apr 2026",
+      "location": "Golden, CO",
+      "description": "Led production machine learning for the DOE Section 179D Web Calculator, owning data engineering, model development, validation, deployment and monitoring. Also worked on LLM agents, reinforcement learning, fault detection and building control.",
+      "highlights": [
+        "Led development of production ML surrogates for the DOE Section 179D Web Calculator, a nationally deployed, IRS-supported platform; models achieve 1.1–3.3% average CVRMSE across 16 U.S. climate zones.",
+        "Trained ridge regression and deep neural network surrogates on EnergyPlus simulations to estimate energy-cost savings across 2 commercial building types, 6 HVAC system types and 16 climate zones.",
+        "Built a LangGraph and LLM agentic workflow to automate grey-box RC model identification, validated by deterministic criteria: RMSE ≤ 0.5°C, parameter CV ≤ 0.15 and a winning-candidate margin above 0.1°C.",
+        "Operationalized MLOps and observability with MLflow, DVC, Evidently, Prometheus, Grafana and GitHub Actions, plus AWS SageMaker and Azure ML, covering versioning, drift detection and monitoring.",
+        "Co-developed a two-stage deep reinforcement learning framework for grid-interactive multi-zone building control, combining evolution strategies with PPO and benchmarking against MPC baselines.",
+        "Created an HVAC fault-detection method using thermostat drive-cycle data and Extended Kalman Filters, published in Energy and Buildings (2021), with sensitivity-analysis findings in Applied Thermal Engineering (2024)."
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "LangGraph",
+        "EnergyPlus",
+        "MLflow",
+        "DVC",
+        "Evidently",
+        "Prometheus",
+        "Grafana",
+        "GitHub Actions",
+        "AWS SageMaker",
+        "Azure ML"
+      ],
+      "earlier": [
+        {
+          "title": "Postdoctoral Researcher, Residential Buildings Group",
+          "start": "Jan 2019",
+          "end": "May 2020"
+        }
+      ]
+    },
+    {
+      "company": "Opera Solutions",
+      "logo": "assets/images/logos/opera-solutions.svg",
+      "title": "Senior Analytics Specialist",
+      "start": "Jun 2018",
+      "end": "Dec 2018",
+      "location": "San Diego, CA",
+      "description": "Directed a data analytics team building statistical and machine learning models to forecast used-vehicle floor prices at auction.",
+      "highlights": [
+        "Directed a data analytics team developing statistical and machine learning models to forecast used-vehicle floor prices at auction, supporting bidding strategies.",
+        "Devised model validation and performance-reporting workflows to assess forecast reliability and model suitability before production deployment.",
+        "Translated forecast results into pricing and bidding recommendations for business stakeholders, supporting production model adoption."
+      ],
+      "technologies": [
+        "Statistical modeling",
+        "Machine learning",
+        "Forecasting",
+        "Data analytics"
+      ]
+    }
+  ]
+}

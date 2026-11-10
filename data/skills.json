@@ -1,0 +1,112 @@
+{
+  "groups": [
+    {
+      "name": "Languages & Data",
+      "items": [
+        "Python",
+        "SQL",
+        "C",
+        "C++",
+        "MATLAB",
+        "PySpark",
+        "Git",
+        "Power BI"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "items": [
+        "Supervised Learning",
+        "Ridge/Lasso Regression",
+        "Random Forest",
+        "Gradient Boosting",
+        "XGBoost",
+        "scikit-learn",
+        "Feature Engineering",
+        "Cross-Validation",
+        "A/B Testing",
+        "Hyperparameter Optimization",
+        "Transfer Learning",
+        "Statistical Analysis"
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "items": [
+        "PyTorch",
+        "TensorFlow",
+        "NumPy",
+        "SciPy",
+        "Deep Neural Networks",
+        "Transformer-Based Models",
+        "Sequence Modeling",
+        "Physics-Informed ML"
+      ]
+    },
+    {
+      "name": "Generative & Agentic AI",
+      "items": [
+        "LLMs",
+        "LangGraph",
+        "Multi-Agent Workflows",
+        "Prompt Engineering",
+        "Context Design",
+        "LLM Evaluation & Benchmarking"
+      ]
+    },
+    {
+      "name": "RL & Control",
+      "items": [
+        "PPO",
+        "Evolution Strategies",
+        "Policy Gradient Methods",
+        "Gradient-Free Optimization",
+        "Model Predictive Control",
+        "Distributed Multi-Agent Optimization"
+      ]
+    },
+    {
+      "name": "MLOps & Cloud",
+      "items": [
+        "MLflow",
+        "DVC",
+        "Evidently",
+        "FastAPI",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "GitHub Actions",
+        "AWS SageMaker",
+        "Azure ML",
+        "Apache Spark",
+        "Model Monitoring"
+      ]
+    },
+    {
+      "name": "Forecasting & Validation",
+      "items": [
+        "Time-Series Forecasting",
+        "Kalman Filtering",
+        "System Identification",
+        "Uncertainty Quantification",
+        "SHAP",
+        "Explainable AI",
+        "Robustness Testing",
+        "Load Testing (Locust)"
+      ]
+    },
+    {
+      "name": "Vision & Building Energy",
+      "items": [
+        "Semantic Segmentation",
+        "OCR",
+        "Vision-Language Models",
+        "EnergyPlus",
+        "OpenStudio",
+        "ResStock",
+        "IfcOpenShell",
+        "HVAC Fault Detection"
+      ]
+    }
+  ]
+}
